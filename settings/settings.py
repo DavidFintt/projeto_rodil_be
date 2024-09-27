@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 from .rest_framework import REST_FRAMEWORK
+from .simple_jwt import SIMPLE_JWT
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -56,6 +57,7 @@ INSTALLED_APPS = [
 
 CORS_ALLOW_ALL_ORIGINS = True
 REST_FRAMEWORK = REST_FRAMEWORK
+SIMPLE_JWT = SIMPLE_JWT
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
